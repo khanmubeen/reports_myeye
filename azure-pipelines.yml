@@ -12,7 +12,7 @@ stages:
   - job: A2
     steps:
     - script: echo "A2"
-stages:
+
 - stage: B
   jobs:
   - job: B1
