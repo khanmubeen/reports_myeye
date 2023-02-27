@@ -5,7 +5,7 @@ pool:
 
 stages:
 - stage: A
-jobs:
+  jobs:
   - job: A1
     steps:
     - script: echo "A"
