@@ -5,33 +5,32 @@ pool:
 
 stages:
 - stage: A
-  jobs:
-  - job: A1
-	steps:
-	- script: echo "A"
+jobs:
+  -job: A1
+steps:
+- script: echo "A"
+  -job: A2
+steps:
+- script: echo "A2"
+
+# - stage: B
+#   dependsOn: A
+# 	jobs:
+# 	- job: B1
+# 	  steps:
+# 	  - script: echo "B1"
 	  
-  - job: A2
-	steps:
-	- script: echo "A2"
-##
-- stage: B
-  dependsOn: A
-	jobs:
-	- job: B1
-	  steps:
-	  - script: echo "B1"
-	  
-	- job: B2
-	  steps:
-	  - script: echo "B2"
-- stage: C
-  dependsOn: 
-  - A
-  - B
-	jobs:
-	- job: C1
-	  steps:
-	  - script: echo "C1"
+# 	- job: B2
+# 	  steps:
+# 	  - script: echo "B2"
+# - stage: C
+#   dependsOn: 
+#   - A
+#   - B
+# 	jobs:
+# 	- job: C1
+# 	  steps:
+# 	  - script: echo "C1"
 
 	
 	  
