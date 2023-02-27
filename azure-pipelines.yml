@@ -24,9 +24,7 @@ stages:
     - script: echo "B2"
 
 - stage: C
-  dependsOn: 
-  - A
-  - B
+  dependsOn: A
   jobs:
   - job: C1
     steps:
