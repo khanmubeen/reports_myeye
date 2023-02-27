@@ -1,7 +1,7 @@
 trigger: none
 
 pool:
-	vmImage: 'ubunut-16.04'
+ vmImage: 'ubunut-16.04'
 
 stages:
 - stage: A
